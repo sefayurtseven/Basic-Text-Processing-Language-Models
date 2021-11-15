@@ -1,15 +1,16 @@
 import os
 import ReadFile
 if __name__ == '__main__':
-    dirname = os.path.dirname(__file__)
-    read_File_AMemorableFancy = ReadFile.FileReader(dirname + "\\Data\\hw01_AMemorableFancy.txt")
+    dir_name = os.path.dirname(__file__)
+    read_File_AMemorableFancy = ReadFile.FileReader(dir_name + "\\Data\\hw01_AMemorableFancy.txt", "AMemorableFancy.txt")
     read_File_AMemorableFancy.read_txt_file()
-
-    read_File_FireFairies = ReadFile.FileReader(dirname + "\\Data\\hw01_FireFairies.txt")
-    read_File_FireFairies.read_txt_file()
-
-    read_File_tiny = ReadFile.FileReader(dirname + "\\Data\\hw01_tiny.txt")
-    read_File_AMemorableFancy.read_txt_file()
+    read_File_AMemorableFancy.print_sentences()
+    read_File_AMemorableFancy.show_results()
+    # read_File_FireFairies = ReadFile.FileReader(dir_name + "\\Data\\hw01_FireFairies.txt")
+    # read_File_FireFairies.read_txt_file()
+    #
+    # read_File_tiny = ReadFile.FileReader(dir_name + "\\Data\\hw01_tiny.txt")
+    # read_File_AMemorableFancy.read_txt_file()
 
 
 
