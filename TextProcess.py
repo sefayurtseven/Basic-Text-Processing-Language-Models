@@ -232,7 +232,7 @@ class TextProcessing(object):
                 break;
             else:
                 prob = get_sentences_prob(string, self.read_text, True)
-                pdf.cell(0, 5, txt="    -" + string + ": " + str(prob), border=0, ln=2, align='L')
+                pdf.cell(0, 5, txt="    -" + string + "    (ItsComputeProbability: " + str(prob) + ")", border=0, ln=2, align='L')
         pdf.cell(0, 20, txt=" ", border=0, ln=2, align='L')
         pdf.set_font("Arial", size=10)
         pdf.cell(0, 5, txt="Sentences: ", border=0, ln=2, align='L')
